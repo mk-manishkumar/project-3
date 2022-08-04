@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b2922;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 5fr 5fr 2fr;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.list-item {
+  display: inline;
+  margin-left: 2rem;
+  color: #758283;
+  font-size: 1.2rem;
+}
+
+.list-item:first-child {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.nav-btn {
+  border: 1px solid #9d8c35;
+  color: #9d8c35;
+  padding: 12px 36px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* ************************************************* */
+
+/* hero */
+
+.hero {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-gap: 3rem;
+  color: #ffffff;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 5rem;
+  line-height: 2.5cm;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: #758283;
+}
+
+.hero-image {
+  background: url(assets/justice-background.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 41vh;
+  width: 100%;
+}
+
+/* ******************************************************** */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1512px) {
+  body {
+    background-color: none;
+    background: url(assets/justice-background.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .hero-image{
+    background: none;
+  }
+
+  .navbar{
+    grid-template-columns: 3fr 7fr 2fr;
+  }
+}
+
+@media (max-width: 1080px) {
+    .navbar{
+        display: block;
+        text-align: center;
+    }
+
+    .hero{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-list{
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 635px){
+    .navbar{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .list-item{
+        margin-left: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .hero-heading{
+        font-size: 3rem;
+    }
+
+    .hero-description{
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+}
